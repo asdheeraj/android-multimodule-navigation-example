@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), ToFlowNavigatable {
         navView.setupWithNavController(navController)
     }
 
-    override fun navigateToFlow(flow: NavigationFlow) {
+    override fun navigateToFlow(flow: NavigationFlow<*>) {
         navigator.navigateToFlow(flow)
     }
 }

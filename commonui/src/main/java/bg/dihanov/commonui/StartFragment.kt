@@ -22,8 +22,8 @@ class StartFragment : Fragment() {
         // decide where to go on the first app launch, check auth tokens if login needed etc...
         (0..1).random().let {
             when (it) {
-                0 -> (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.HomeFlow)
-                1 -> (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.DashboardFlow)
+                0 -> (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.HomeFlow(23))
+                1 -> (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.DashboardFlow())
             }
         }
     }

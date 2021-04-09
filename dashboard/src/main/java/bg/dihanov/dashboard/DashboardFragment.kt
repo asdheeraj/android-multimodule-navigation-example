@@ -23,7 +23,7 @@ class DashboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         navigate_to_home_btn.setOnClickListener {
-            (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.HomeFlow)
+            (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.HomeFlow(value = 100))
         }
     }
 }

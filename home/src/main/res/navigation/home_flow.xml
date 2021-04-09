@@ -10,6 +10,10 @@
         <action
             android:id="@+id/action_homeFragment_to_nextFragment"
             app:destination="@id/nextFragment" />
+        <argument
+            android:name="sample"
+            app:argType="integer"/>
+
     </fragment>
 
     <fragment
