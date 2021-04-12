@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
-    val args: HomeFragmentArgs by navArgs()
+    private val args: HomeFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -12,7 +12,8 @@
             app:destination="@id/nextFragment" />
         <argument
             android:name="sample"
-            app:argType="integer"/>
+            app:argType="integer"
+            android:defaultValue="23786" />
 
     </fragment>
 
